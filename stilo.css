@@ -82,7 +82,9 @@ p#historia{
 
 #mural{
     text-align: center;
-    height: 250px;
+    margin: auto;
+    max-width: 350px;
+    max-height: 220px;
 }
 
 #fotoTime{
