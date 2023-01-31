@@ -85,11 +85,13 @@ p#historia{
     height: 250px;
 }
 
-#fotos{
+#fotoTime{
     margin-top: 10px;
     margin-bottom: 10px ;
     width: 350px;
     height: 220px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
 }
 
 nav > a {

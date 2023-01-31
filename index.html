@@ -13,7 +13,8 @@
     </header>
 
     <p id="selecionarTime">Selecione um time
-        <select name="times" id="times">
+        <select name="times" id="times" onchange="time(this.value)">
+            <option value="Selecione um time">Selecione um time</option>
             <option value="Bills">Buffalo Bills</option>
             <option value="Dolphins">Miami Dolphins</option>
             <option value="Patriots">New England Patriots</option>
@@ -50,12 +51,12 @@
     </p>
 
     <main>
-        <h2>Nome do Time</h2>
+        <h2 id="nomeTime">Nome do Time</h2>
 
         <article class="time">
             <img src="imagens/wallpaper004.jpg" alt="escudoDoTime" id="escudo">
        
-            <p id="historia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut sed laudantium minima sunt dolorem adipisci reiciendis ad impedit enim veniam tempora voluptatem nisi optio exercitationem, amet dolores, delectus architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta neque et minus ex aperiam necessitatibus velit obcaecati omnis aliquam laudantium quas minima accusantium esse culpa alias, assumenda quis iste ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dicta quasi deserunt impedit facere, est iste, dignissimos at, quam illo autem aliquid quae commodi! Ipsa similique magni soluta placeat tenetur.</p>
+            <p id="historia"></p>
         </article>
 
         <article class="titulos">
@@ -71,7 +72,7 @@
         </article>
 
         <div id="mural">
-            <img src="imagens/fundo_650.jpg" alt="fotos do time" id="fotos">
+            <img src="imagens/wallpaper004.jpg" alt="" id="fotoTime">
 
             <nav id="menu">
                 <a href="#">Jogadores</a>
@@ -82,5 +83,7 @@
         </div>
         
     </main>
+
+    <script src="scrip.js"></script>
 </body>
 </html>
