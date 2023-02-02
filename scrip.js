@@ -4,6 +4,7 @@ var escudo = document.getElementById('escudo')
 var historia = document.getElementById('historia')
 var fotoTime = document.getElementById('fotoTime')
 var qb = document.getElementById('qb')
+var rodape = document.getElementById('rodape')
 
 const Times = {
     "Bills": {
@@ -244,5 +245,6 @@ function time(selectedValue){
     fotoTime.setAttribute('src',Times[selectedValue].fotoTime)
     qb.innerHTML = Times[selectedValue].nomeJogador
     qb.style.color = Times[selectedValue].corBase
+    rodape.style.backgroundColor = Times[selectedValue].corBase
 
 }
