@@ -3,16 +3,17 @@ body{
     padding: 0px;
     background-image: url('imagens/wallpaper004.jpg') ;
     background-position: center center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     height: 100vh;
+    background-color: black;
 }
 
 header{
-    background-color: rgba(128, 128, 128, 0.315);
+    background-image: linear-gradient(to right,transparent,rgba(0, 0, 0, 0.281),transparent);
     color: white;
     margin: auto;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.452);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.253);
 }
 
 header > h1 {
@@ -30,7 +31,7 @@ main {
     background-color: rgba(211, 211, 211, 0.651);
     max-width: 500px;
     min-width: 300px;
-    height: 630px;
+    height: 750px;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
@@ -95,7 +96,7 @@ p#historia{
 }
 
 #fotoTime{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px ;
     max-width: 350px;
     max-height: 220px;
