@@ -107,6 +107,7 @@ p#historia{
 #qb {
     background-image: linear-gradient(to right,transparent,rgba(0, 0, 0, 0.082),transparent);
     margin: 0px;
+    margin-bottom: 20px;
     border-radius: 5px;
     font-family: sans-serif;
 }
