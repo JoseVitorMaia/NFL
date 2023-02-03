@@ -7,9 +7,8 @@
                 
 
 body{
-    
+    background-attachment: fixed;
     background-image: url('imagens/wallpaper004.jpg') ;
-    background-position: top center;
     background-size: cover ;
     background-repeat: repeat;
     background-color: aliceblue;
@@ -103,11 +102,11 @@ p#historia{
 }
 
 #superBowl a{
-    padding: 10px;
+    padding: 7px;
     background-color: rgba(99, 99, 99, 0.123);
     color: black;
     border-radius: 7px;
-    font-size: 15px;
+    font-size: 12px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
 }
 
@@ -115,9 +114,7 @@ p#historia{
     background-color: rgba(99, 99, 99, 0.308);
     transition-duration: 0.5s;
 }
-#data{
-    margin-left: -8px;
-}
+
 #mural{
     text-align: center;
     margin: auto;
