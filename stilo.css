@@ -11,10 +11,10 @@ body{
     padding: 0px;
     background-image: url('imagens/wallpaper004.jpg') ;
     background-position: center center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    background-color: black;
+    height: 98vh;
+    background-color: aliceblue;
 }
 
 header{
@@ -39,9 +39,8 @@ header > h1 {
 main {
     display: none;
     background-color: rgba(211, 211, 211, 0.651);
-    max-width: 500px;
+    max-width: 550px;
     min-width: 300px;
-    height: auto;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
@@ -67,12 +66,10 @@ main > h2 {
 
 
 img#escudo{
-    top: 10px;
     width: 150px;
     height: 150px;
     display: inline-block;
     position: relative;
-    top: -10px;
 }
 
 p#historia{
@@ -98,8 +95,8 @@ p#historia{
     margin-top: 0px;
 }
 #superBowl{
-    padding: 7px;
-    width: 80%;
+    padding: 5px;
+    width: 380px;
     font-size: 20px;
     font-family: 'NFL',serif;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
@@ -137,14 +134,15 @@ p#historia{
 
 #qb {
     background-image: linear-gradient(to right,transparent,rgba(0, 0, 0, 0.082),transparent);
-    margin: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
     border-radius: 5px;
     font-family: sans-serif;
 }
 
 #rodape {
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
     height: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -156,8 +154,9 @@ p#historia{
     background-color: rgba(128, 128, 128, 0.637);
     text-align: center;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     font-size: .7em;
-    height: 15px;
+    height: 10px;
+    padding: 2px;
     width: 100%;
 }
