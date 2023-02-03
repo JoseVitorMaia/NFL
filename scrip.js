@@ -6,6 +6,7 @@ var fotoTime = document.getElementById('fotoTime')
 var qb = document.getElementById('qb')
 var rodape = document.getElementById('rodape')
 var data = document.getElementById('data')
+var sb = document.getElementById('superBowl')
 
 const Times = {
     "Bills": {
@@ -14,7 +15,7 @@ const Times = {
         "fotoTime":"imagens/QBs/joshAllen.jpg",
         "nomeJogador":"Josh Allen",
         "corBase":"#1840B8",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Dolphins": {
         "escudo":"imagens/logos/mia.png",
@@ -31,7 +32,7 @@ const Times = {
         "fotoTime":"imagens/QBs/macJones.jpeg",
         "nomeJogador":"Mac Jones",
         "corBase":"#00295B",
-	"data":"2001  2003  2004  2014  2016  2018"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXVI' target='_blank'>2001</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXVIII' target='_blank'>2003</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXIX' target='_blank'>2004</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLIX' target='_blank'>2014</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_LI' target='_blank'>2016</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_LIII' target='_blank'>2018</a>"
     },
     "Jets": {
         "escudo":"imagens/logos/jets.png",
@@ -47,7 +48,7 @@ const Times = {
         "fotoTime":"imagens/QBs/lamar.jpeg",
         "nomeJogador":"Lamar Jackson",
         "corBase":"#1B1C56",
-	"data":"2000  2012"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXV' target='_blank'>2000</a> <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLVII' target='_blank'>2012</a>"
     },
     "Bengals": {
         "escudo":"imagens/logos/bengals.png",
@@ -55,7 +56,7 @@ const Times = {
         "fotoTime":"imagens/QBs/burrow.jfif",
         "nomeJogador":"Joe Burrow",
         "corBase":"#F04E23",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Browns": {
         "escudo":"imagens/logos/browns.png",
@@ -63,7 +64,7 @@ const Times = {
         "fotoTime":"imagens/QBs/deshaun.jfif",
         "nomeJogador":"Deshaun Watson",
         "corBase":"#FD6100",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Steelers": {
         "escudo":"imagens/logos/steelers.png",
@@ -71,7 +72,7 @@ const Times = {
         "fotoTime":"imagens/QBs/kenny.jpg",
         "nomeJogador":"Kenny Pickett",
         "corBase":"#FFC51B",
-	"data":"1974  1975  1978  1979  2005  2008"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_IX' target='_blank'>1974</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_X' target='_blank'>1975</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XIII' target='_blank'>1978</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XIV' target='_blank'>1979</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XL' target='_blank'>2005</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLIII' target='_blank'>2008</a>"
     },
     "Broncos": {
         "escudo":"imagens/logos/broncos.png",
@@ -79,7 +80,7 @@ const Times = {
         "fotoTime":"imagens/QBs/russell.JPG",
         "nomeJogador":"Russel Wilson",
         "corBase":"#FF5601",
-	"data":"1997  1998  2015"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXII' target='_blank'>1997</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXIII' target='_blank'>1998</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_50' target='_blank'>2015</a>"
     },
     "Chiefs": {
         "escudo":"imagens/logos/chiefs.png",
@@ -87,7 +88,7 @@ const Times = {
         "fotoTime":"imagens/QBs/mahomes.jfif",
         "nomeJogador":"Patrick Mahomes",
         "corBase":"#FF0000",
-	"data":"1969  2019"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_IV' target='_blank'>1969</a> <a href='https://pt.wikipedia.org/wiki/Super_Bowl_LIV' target='_blank'>2019</a>"
     },
     "Raiders": {
         "escudo":"imagens/logos/raiders.png",
@@ -95,7 +96,7 @@ const Times = {
         "fotoTime":"imagens/QBs/carr.jpg",
         "nomeJogador":"Derek Carr",
         "corBase":"#808080",
-	"data":"1976  1980  1983"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XI' target='_blank'>1976</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XV' target='_blank'>1980</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XVIII' target='_blank'>1983</a>"
     },
     "Chargers": {
         "escudo":"imagens/logos/chargers.png",
@@ -103,7 +104,7 @@ const Times = {
         "fotoTime":"imagens/QBs/justin.jfif",
         "nomeJogador":"Justin Herbert",
         "corBase":"#1281C4",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Texans": {
         "escudo":"imagens/logos/texans.png",
@@ -111,7 +112,7 @@ const Times = {
         "fotoTime":"imagens/QBs/mills.jfif",
         "nomeJogador":"Davis Mills",
         "corBase":"#00123F",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Colts": {
         "escudo":"imagens/logos/colts.png",
@@ -119,7 +120,7 @@ const Times = {
         "fotoTime":"imagens/QBs/matt.jpg",
         "nomeJogador":"Matt Ryan",
         "corBase":"#00427E",
-	"data":"1970  2006"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_V' target='_blank'>1970</a> <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLI' target='_blank'>2006</a>"
     },
     "Jaguars": {
         "escudo":"imagens/logos/jaguars.png",
@@ -127,7 +128,7 @@ const Times = {
         "fotoTime":"imagens/QBs/trevor.jfif",
         "nomeJogador":"Trevor Lawrence",
         "corBase":"#DAA520",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Titans": {
         "escudo":"imagens/logos/titans.png",
@@ -135,7 +136,7 @@ const Times = {
         "fotoTime":"imagens/QBs/tannehill.jpeg",
         "nomeJogador":"Ryan Tannehill",
         "corBase":"#00008B",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Cowboys": {
         "escudo":"imagens/logos/cowboys.png",
@@ -143,7 +144,7 @@ const Times = {
         "fotoTime":"imagens/QBs/dak.jpg",
         "nomeJogador":"Dak Prescott",
         "corBase":"#00295B",
-	"data":"1971  1977  1992  1993  1995"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_VI' target='_blank'>1971</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XII' target='_blank'>1977</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXVII' target='_blank'>1992</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXVIII' target='_blank'>1993</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXX' target='_blank'>1995</a>"
     },
     "Giants": {
         "escudo":"imagens/logos/giants.png",
@@ -151,7 +152,7 @@ const Times = {
         "fotoTime":"imagens/QBs/jones.jfif",
         "nomeJogador":"Daniel Jones",
         "corBase":"#021248",
-	"data":"1986  1990  2007  2011"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXI' target='_blank'>1986</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXV' target='_blank'>1990</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLII' target='_blank'>2007</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLVI' target='_blank'>2011</a>"
     },
     "Eagles": {
         "escudo":"imagens/logos/eagles.png",
@@ -159,7 +160,7 @@ const Times = {
         "fotoTime":"imagens/QBs/jalen.jpeg",
         "nomeJogador":"Jalen Hurts",
         "corBase":"#2A4A52",
-	"data":"2017"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_LII' target='_blank'>2017</a>"
     },
     "Commanders": {
         "escudo":"imagens/logos/commanders.png",
@@ -167,7 +168,7 @@ const Times = {
         "fotoTime":"imagens/QBs/wentz.jpg",
         "nomeJogador":"Carson Wentz",
         "corBase":"#5A1313",
-	"data":"1982  1987  1991"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XVII' target='_blank'>1982</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXII' target='_blank'>1987</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXVI' target='_blank'>1991</a>"
     },
     "Bears": {
         "escudo":"imagens/logos/bears.png",
@@ -175,7 +176,7 @@ const Times = {
         "fotoTime":"imagens/QBs/fields.jpg",
         "nomeJogador":"Justin Fields",
         "corBase":"#F26522",
-	"data":"1985"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XX' target='_blank'>1985</a>"
     },
     "Lions": {
         "escudo":"imagens/logos/lions.png",
@@ -183,7 +184,7 @@ const Times = {
         "fotoTime":"imagens/QBs/goff.jfif",
         "nomeJogador":"Jared Goff",
         "corBase":"#0076B6",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Packers": {
         "escudo":"imagens/logos/packers.png",
@@ -191,7 +192,7 @@ const Times = {
         "fotoTime":"imagens/QBs/aaron.jfif",
         "nomeJogador":"Aaron Rodgers",
         "corBase":"#203731",
-	"data":"1966  1967  1996  2010"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_I' target='_blank'>1966</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_II' target='_blank'>1967</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXI' target='_blank'>1996</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLV' target='_blank'>2010</a>"
     },
     "Vikings": {
         "escudo":"imagens/logos/vikings.png",
@@ -199,7 +200,7 @@ const Times = {
         "fotoTime":"imagens/QBs/cousins.jfif",
         "nomeJogador":"Kirk Cousins",
         "corBase":"#4E2CB6",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Cardinals": {
         "escudo":"imagens/logos/cardinals.png",
@@ -207,7 +208,7 @@ const Times = {
         "fotoTime":"imagens/QBs/murray.jpeg",
         "nomeJogador":"Kyler Murray",
         "corBase":"#B0063A",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Rams": {
         "escudo":"imagens/logos/rams.png",
@@ -215,7 +216,7 @@ const Times = {
         "fotoTime":"imagens/QBs/stafford.jfif",
         "nomeJogador":"Matthew Stafford",
         "corBase":"#1840B8",
-	"data":"1999  2021"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXIV' target='_blank'>1999</a> <a href='https://pt.wikipedia.org/wiki/Super_Bowl_LVI' target='_blank'>2021</a>"
     },
     "49ers": {
         "escudo":"imagens/logos/49ers.png",
@@ -223,7 +224,7 @@ const Times = {
         "fotoTime":"imagens/QBs/purdy.jpg",
         "nomeJogador":"Brock Purdy",
         "corBase":"#B8083E",
-	"data":"1981  1984  1988  1989  1994"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XVI' target='_blank'>1981</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XIX' target='_blank'>1984</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXIII' target='_blank'>1988</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXIV' target='_blank'>1989</a>  <a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXIX' target='_blank'>1994</a>"
     },
     "Seahawks": {
         "escudo":"imagens/logos/seahawks.png",
@@ -231,7 +232,7 @@ const Times = {
         "fotoTime":"imagens/QBs/geno.JPG",
         "nomeJogador":"Geno Smith",
         "corBase":"#002A5C",
-	"data":"2013"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLVIII' target='_blank'>2013</a>"
     },
     "Falcons": {
         "escudo":"imagens/logos/falcons.png",
@@ -239,7 +240,7 @@ const Times = {
         "fotoTime":"imagens/QBs/ridder.jpeg",
         "nomeJogador":"Desmond Ridder",
         "corBase":"#A41D33",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Panthers": {
         "escudo":"imagens/logos/panthers.png",
@@ -247,7 +248,7 @@ const Times = {
         "fotoTime":"imagens/QBs/walker.jfif",
         "nomeJogador":"Phillip Walker",
         "corBase":"#0099D7",
-	"data":" - "
+	"data":" Sem titulos "
     },
     "Saints": {
         "escudo":"imagens/logos/saints.png",
@@ -255,7 +256,7 @@ const Times = {
         "fotoTime":"imagens/QBs/book.jpg",
         "nomeJogador":"Ian Book",
         "corBase":"#C8AA76",
-	"data":"2009"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XLIV' target='_blank'>2009</a>"
     },
     "Buccaneers": {
         "escudo":"imagens/logos/buccs.png",
@@ -263,7 +264,7 @@ const Times = {
         "fotoTime":"imagens/QBs/brady.jfif",
         "nomeJogador":"Tom Brady",
         "corBase":"#A31D2F",
-	"data":"2002, 2020"
+	"data":"<a href='https://pt.wikipedia.org/wiki/Super_Bowl_XXXVII' target='_blank'>2002</a> <a href='https://pt.wikipedia.org/wiki/Super_Bowl_LV' target='_blank'>2020</a>"
     }
 
 
@@ -281,5 +282,5 @@ function time(selectedValue){
     qb.innerHTML = Times[selectedValue].nomeJogador
     qb.style.color = Times[selectedValue].corBase
     rodape.style.backgroundColor = Times[selectedValue].corBase
-
+    superBowl.style.color = Times[selectedValue].corBase
 }

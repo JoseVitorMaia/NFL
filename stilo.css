@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'NFL';
+    src: url('imagens/font/nfl.ttf') format('opentype');
+    
+  }
+
+                
+
 body{
     margin: 0px;
     padding: 0px;
@@ -14,6 +22,8 @@ header{
     color: white;
     margin: auto;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.253);
+    font-family: 'NFL', Times, serif;
+    font-size: 20px;
 }
 
 header > h1 {
@@ -40,6 +50,8 @@ main {
     text-align: center;
 }
 
+
+
 main > h2 {
     background-color: rgba(128, 128, 128, 0.74);
     border-top-left-radius: 10px;
@@ -48,6 +60,8 @@ main > h2 {
     text-align: center;
     color: white;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    font-family: 'NFL',serif;
+    font-size: 30px;        
 }
 
 
@@ -65,7 +79,11 @@ p#historia{
     width: 330px;
     text-align: justify;
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: Times, serif;
+    line-height: 16px;
+    
+    
 }
 
 .trofeus{
@@ -80,12 +98,25 @@ p#historia{
     margin-top: 0px;
 }
 #superBowl{
-    border-right: 1px solid black;
+    padding: 7px;
+    width: 400px;
+    font-size: 20px;
+    font-family: 'NFL',serif;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
 }
 
-#titulos{
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+#superBowl a{
+    padding: 10px;
+    background-color: rgba(99, 99, 99, 0.123);
+    color: black;
+    border-radius: 7px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+}
+
+#superBowl a:hover{
+    background-color: rgba(99, 99, 99, 0.308);
+    transition-duration: 0.5s;
 }
 
 #mural{
@@ -96,7 +127,7 @@ p#historia{
 }
 
 #fotoTime{
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 10px ;
     max-width: 350px;
     max-height: 220px;
@@ -112,9 +143,21 @@ p#historia{
     font-family: sans-serif;
 }
 
-footer {
+#rodape {
     margin-top: 50px;
     height: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+
+#creditos {
+    display: block;
+    background-color: rgba(128, 128, 128, 0.637);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: .7em;
+    height: 15px;
+    width: 100%;
 }
