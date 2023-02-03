@@ -7,6 +7,8 @@
                 
 
 body{
+    margin: 0;
+    padding: 0;
     background-attachment: fixed;
     background-image: url('imagens/wallpaper004.jpg') ;
     background-size: cover ;
@@ -99,6 +101,7 @@ p#historia{
     font-size: 20px;
     font-family: 'NFL',serif;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
+    margin-left: -20px;
 }
 
 #superBowl a{
@@ -125,7 +128,8 @@ p#historia{
 #fotoTime{
     margin-top: 35px;
     margin-bottom: 10px ;
-    max-width: 350px;
+    width: 100%;
+    max-width: 300px;
     max-height: 220px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
