@@ -7,13 +7,11 @@
                 
 
 body{
-    margin: 0px;
-    padding: 0px;
+    
     background-image: url('imagens/wallpaper004.jpg') ;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 98vh;
+    background-position: top center;
+    background-size: cover ;
+    background-repeat: repeat;
     background-color: aliceblue;
 }
 
@@ -43,6 +41,7 @@ main {
     min-width: 300px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
     padding: 0px;
@@ -96,7 +95,8 @@ p#historia{
 }
 #superBowl{
     padding: 5px;
-    width: 380px;
+    margin: auto;
+    width: 367px;
     font-size: 20px;
     font-family: 'NFL',serif;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
@@ -115,7 +115,9 @@ p#historia{
     background-color: rgba(99, 99, 99, 0.308);
     transition-duration: 0.5s;
 }
-
+#data{
+    margin-left: -8px;
+}
 #mural{
     text-align: center;
     margin: auto;
